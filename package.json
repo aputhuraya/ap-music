@@ -9,6 +9,7 @@
   "author": "Anish Puthuraya",
   "license": "ISC",
   "dependencies": {
+    "googleapis": "^39.2.0",
     "node-sass": "^4.13.0"
   }
 }
