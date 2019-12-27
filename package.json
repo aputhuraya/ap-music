@@ -3,12 +3,15 @@
   "version": "1.0.0",
   "description": "Anish Puthuraya Music",
   "main": "index.js",
+  "homepage": "https://aputhuraya.github.io/ap-music",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css --recursive"
+    "sass": "node-sass -w scss/ -o dist/css --recursive",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Anish Puthuraya",
   "license": "ISC",
   "dependencies": {
+    "gh-pages": "^2.1.1",
     "googleapis": "^39.2.0",
     "node-sass": "^4.13.0"
   }
