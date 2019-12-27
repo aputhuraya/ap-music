@@ -7,6 +7,9 @@ function deferVideo() {
     video.load();
     // uncomment if video is not autoplay
   });
+  $(".carousel").carousel({
+    interval: 10000
+  });
   $(window).scroll(function() {
     if ($(window).scrollTop() >= $(window).height() * 0.55) {
       $(".navbar").css("background-color", "black");
