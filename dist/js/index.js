@@ -1,6 +1,6 @@
 function deferVideo() {
   //defer html5 video loading
-  $("video source").each(function() {
+  $("video source").each(function () {
     var sourceFile = $(this).attr("data-src");
     $(this).attr("src", sourceFile);
     var video = this.parentElement;
@@ -8,18 +8,18 @@ function deferVideo() {
     // uncomment if video is not autoplay
   });
   $(".carousel").carousel({
-    interval: 10000
+    interval: 10000,
   });
-  $(window).scroll(function() {
+  $(window).scroll(function () {
     if ($(window).scrollTop() >= $(window).height() * 0.55) {
       $(".navbar").css("background-color", "black");
       $(".navbar").css("opacity", "0.9");
       $(".navbar .row div").css("opacity", "0.9");
       $(".navbar .row div").hover(
-        function() {
+        function () {
           $(this).css("opacity", "1");
         },
-        function() {
+        function () {
           $(this).css("opacity", "0.9");
         }
       );
@@ -28,10 +28,10 @@ function deferVideo() {
       $(".navbar .row div").css("opacity", "0.5");
       $(".navbar .row div").css("transition", "opacity 0.6s");
       $(".navbar .row div").hover(
-        function() {
+        function () {
           $(this).css("opacity", "1");
         },
-        function() {
+        function () {
           $(this).css("opacity", "0.5");
         }
       );
